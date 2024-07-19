@@ -31,8 +31,10 @@ const createCheckoutSession = async (req: Request, res: Response) => {
           quantity: item.quantity,
         };
       }),
-      success_url: `${CLIENT_URL}/success.html`,
-      cancel_url: `${CLIENT_URL}/cancel.html`,
+      success_url: `${CLIENT_URL}/success`,
+      // success_url: `${CLIENT_URL}/success.html`,
+      cancel_url: `${CLIENT_URL}/cancel`,
+      // cancel_url: `${CLIENT_URL}/cancel.html`,
     });
     console.log("session:", session);
 
