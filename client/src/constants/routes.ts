@@ -1,4 +1,5 @@
 const HOME = "/";
 const SUCCESS = "/success";
+const CANCEL = "/cancel";
 
-export { HOME, SUCCESS };
+export { HOME, SUCCESS, CANCEL };
