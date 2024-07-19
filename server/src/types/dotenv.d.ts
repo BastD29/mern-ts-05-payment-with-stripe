@@ -4,5 +4,6 @@ declare namespace NodeJS {
     STRIPE_PRIVATE_KEY: string | undefined;
     PORT: string;
     CLIENT_URL: string;
+    ALLOWED_ORIGIN: string;
   }
 }
