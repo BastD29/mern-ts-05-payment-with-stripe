@@ -9,11 +9,6 @@ const Checkout: FC = () => {
       const url = await createCheckoutSession(items);
       window.location.href = url;
     } catch (error) {
-      // if (error instanceof Error) {
-      //   console.error("Error during checkout:", error.message);
-      // } else {
-      //   console.error("Unexpected error during checkout:", error);
-      // }
       console.error("Error during checkout:", (error as Error).message);
     }
   };
