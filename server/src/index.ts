@@ -19,7 +19,7 @@ const corsOptions: cors.CorsOptions = {
     if (
       !origin ||
       origin.includes("Postman") ||
-      ALLOWED_ORIGIN.includes(origin)
+      (ALLOWED_ORIGIN as string).includes(origin)
     ) {
       callback(null, true);
     } else {
