@@ -14,12 +14,13 @@ const createCheckoutSession = async (items: ItemType[]): Promise<string> => {
     console.log("items:", items); // prints the expected result
 
     const url = `${BASE_URL}${CREATE_CHECKOUT_SESSION}`;
+    console.log("url:", url);
+
     const response = await fetch(url, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      // body: JSON.stringify({ items }),
       body: JSON.stringify({ items }),
     });
 
