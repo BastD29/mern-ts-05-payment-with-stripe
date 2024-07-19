@@ -7,8 +7,9 @@ const Checkout: FC = () => {
   const handleCheckout = async () => {
     try {
       const url = await createCheckoutSession(items);
-      window.location.href = url;
       console.log("url:", url);
+
+      window.location.href = url;
     } catch (error) {
       console.error("Error during checkout:", (error as Error).message);
     }
